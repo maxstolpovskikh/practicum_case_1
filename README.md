@@ -147,4 +147,13 @@ git push # далее можно просто push
 
 ## Словарь
 
-* **HEAD** - синоним HASH последнего коммита
+* **HEAD** - ~синоним HASH последнего коммита~
+
+```mermaid
+graph LR;
+  untracked -- "git add" --> staged;
+  staged    -- "git commit -m 'message'" --> tracked/comitted;
+
+%% стрелка без текста для примера: 
+  A --> B;
+``` 
